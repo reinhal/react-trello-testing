@@ -1,7 +1,14 @@
 language: node_js
 node_js: node_js
-cache: 
-  directories: 
-    - node_modules
+cache:
+  directories:
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: jJJ7FJFiQ1h7aRI9k6M4du22ZPwhJgjGGvNuRVu3FReaoLUkHzs58X2WWgdITXvBkLV3C3N+3cDEFQHrRq8JneUT909YIubTN4XBJliK7XsCPQ6R0biPs3T7FFo2fgIzbmjyeq9gdpD85HGShEi0oHfFX60Wd4uCyoKtoh9MUHPG5M/2QLSdMhCvr3TSBk10p+mPl/L+c+VqYir1/1IOsvIX8G7l/SZXWS5awP7YA6dLfLWD/URm/IIpQwm0AcQncUYWB5RLi31oGweXkkl5dQ3QgOz2OtQ3fR3iLufwg6+4TmtLJR9OmtLtpa9JwXlIpq4H5ZGvd+mpRrcLgjcNyDo+YvglplSivhIKNgDULqZVbghYfi6uUbNf7eYHzd/fmy9m+3zuYn0rf/r66L8D+ONr1RqoD3MX4D5QErpjwkEjdOEy+GH0G0G6+gwyTppDVb4iyXtvlVBqy3KKtSfvMBWFsBwDEZ2uij9jXG8Qh32K60lCgbNwTPmZXc58FR9Mel2cFvdu67IYqyDXvBACjkPJ7Q5+QP2sofdp6yOYLRzunr2oSL6ZT1K0lrRR42uLacy9p+gZb9b2ONFmPA4We5OsWxeFKgB///KPHKk1DqFIbxK+OiIdc0hOMPjDvXipZ/yvDfXj+S7EY0J4PcZE0p9qWr3HLam2eCbGYtkcza0=
+  app: whispering-tundra-49584
+  on:
+    repo: reinhal/react-trello-testing
